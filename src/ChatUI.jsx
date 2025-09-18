@@ -6,9 +6,10 @@ const ChatUI = () => {
   const [messages, setMessages] = useState([]);
   const messagesEndRef = useRef(null);
   const sessionId = useRef(Date.now());
+  const apiUrl = import.meta.env.VITE_FRONTEND_URL;
 
   window.addEventListener("beforeunload", async() => {
-    await fetch(`http://localhost:5000/api/redis/${sessionId.current}`,{
+    await fetch(`${apiUrl}/api/redis/${sessionId.current}`,{
       method:"DELETE"
     });
   })
@@ -24,7 +25,7 @@ const ChatUI = () => {
   const handleClear = async () => {
     try {
       // Delete current session
-      await fetch(`http://localhost:5000/api/redis/${sessionId.current}`, {
+      await fetch(`${apiUrl}}/api/redis/${sessionId.current}`, {
         method: "DELETE"
       });
       
@@ -66,7 +67,7 @@ const ChatUI = () => {
     try {
       // Call backend
       setMessage("");
-      const res = await fetch("http://localhost:5000/api/chat", {
+      const res = await fetch("https://rag-powered-chatbot-backend-qiv0.onrender.com/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -117,7 +118,6 @@ const ChatUI = () => {
           
         </div>
         <button className="share-btn" onClick={handleClear}>
-          <Share size={16} />
           Clear
         </button>
       </div>
