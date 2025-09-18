@@ -1,12 +1,12 @@
 
-# 📰 RAG-Powered News Chatbot – Frontend
+# RAG-Powered News Chatbot – Frontend
 
 This is the frontend of a Retrieval-Augmented Generation (RAG) powered chatbot that answers queries over a news corpus.
 The frontend is built with **React** and styled using **SCSS**. It connects to the backend API to handle chat sessions, display responses, and manage chat history.
 
 ---
 
-## 🚀 Features
+## Features
 
 * **Chat Interface**
 
@@ -29,7 +29,7 @@ The frontend is built with **React** and styled using **SCSS**. It connects to t
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 * **Frontend Framework**: React (with hooks & functional components)
 * **Styling**: SCSS
@@ -47,7 +47,7 @@ You can access the deployed application here:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 frontend/
@@ -69,7 +69,7 @@ frontend/
 
 ---
 
-## ⚙️ Setup & Installation
+##  Setup & Installation
 
 1. **Clone repository**
 
@@ -98,7 +98,7 @@ frontend/
 
 ---
 
-## 🔗 API Integration
+##  API Integration
 
 The frontend communicates with backend APIs:
 
@@ -109,7 +109,7 @@ The frontend communicates with backend APIs:
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 1. **User sends query →** Frontend captures the text input.
 2. **API call →** Sends query + sessionId to backend `/chat`.
