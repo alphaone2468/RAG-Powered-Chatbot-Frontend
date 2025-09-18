@@ -1,6 +1,3 @@
-Perfect 👍 Since your backend README is ready, let’s create a **frontend README** for the React part of your project. I’ll align it with the backend README so both repos look consistent and professional.
-
----
 
 # 📰 RAG-Powered News Chatbot – Frontend
 
