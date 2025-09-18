@@ -1,6 +1,7 @@
 import './App.css'
-import ChatUI from './ChatUI'
+
 import { useState, useEffect } from 'react'
+import ChatUI from './components/ChatUI'
 
 function App() {
   const [isHealthy, setIsHealthy] = useState(false)
